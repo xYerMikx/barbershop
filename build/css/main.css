@@ -105,7 +105,7 @@ input::-ms-clear {
 }
 
 button,
-input[type=submit] {
+input[type="submit"] {
   display: inline-block;
   box-shadow: none;
   background-color: transparent;
@@ -193,7 +193,7 @@ body {
   height: 100%;
   opacity: 0.32;
   box-shadow: inset 0 0 100px 100px var(--page-bg);
-  background-image: url("../../img/about_bg.png");
+  background-image: url("../img/about_bg.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -271,7 +271,7 @@ body {
 }
 
 .appreciate {
-  background-image: url("../../img/background_overlay.png");
+  background-image: url("../img/background_overlay.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -290,7 +290,7 @@ body {
   top: 150px;
   right: -70px;
   position: absolute;
-  background-image: url("../../img/dots_2.svg");
+  background-image: url("../img/dots_2.svg");
   background-position: center;
   background-size: cover;
 }
@@ -308,7 +308,7 @@ body {
   width: 88px;
   position: absolute;
   background-color: inherit;
-  background-image: url("../../img/dots.svg");
+  background-image: url("../img/dots.svg");
   bottom: 10%;
   left: -50px;
   z-index: -1;
@@ -486,7 +486,7 @@ body {
 }
 
 .footer {
-  background-image: url("../../img/background_overlay.png");
+  background-image: url("../img/background_overlay.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -1047,7 +1047,7 @@ body {
   height: 100%;
   opacity: 0.32;
   box-shadow: inset 0 0 100px 100px var(--page-bg);
-  background-image: url("../../img/where_bg.png");
+  background-image: url("../img/where_bg.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -1121,7 +1121,7 @@ body {
   height: 100%;
   opacity: 0.32;
   box-shadow: inset 0 0 100px 100px var(--page-bg);
-  background-image: url("../../img/looking_for.png");
+  background-image: url("../img/looking_for.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -1183,7 +1183,7 @@ body {
 
 .masters {
   background-color: #fff;
-  background-image: url("../../img/background_overlay.png");
+  background-image: url("../img/background_overlay.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1288,7 +1288,7 @@ body {
 }
 .slider::after {
   content: "";
-  background-image: url("../../img//dots.svg");
+  background-image: url("../img//dots.svg");
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -1571,7 +1571,7 @@ body {
 }
 
 .sales {
-  background-image: url("../../img/price_bg.png");
+  background-image: url("../img/price_bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1713,10 +1713,10 @@ body {
   }
 }
 .sales__item:first-child {
-  background-image: url("../../img/discount1.png");
+  background-image: url("../img/discount1.png");
 }
 .sales__item:last-child {
-  background-image: url("../../img/discount2.png");
+  background-image: url("../img/discount2.png");
 }
 .sales__item > h3 {
   font-family: var(--font-accent);
