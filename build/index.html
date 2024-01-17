@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <div id="loader" class="loader">
+      <div class="spinner"></div>
+    </div>
     <header class="header">
   <div class="container">
     <div class="header__container">
@@ -59,6 +62,32 @@
       <a class="nav__logo" href="/"
         ><img src="./img/logo_light.svg" alt="Logo"
       /></a>
+      <div class="nav__links-wrapper">
+        <a
+          rel="nofollow"
+          href="https://vk.com/shetina32"
+          class="nav__img"
+          target="_blank"
+        >
+          <img src="./img/vk.svg" alt="vk"
+        /></a>
+        <a
+          rel="nofollow"
+          href="https://t.me/Shetina"
+          class="nav__img"
+          target="_blank"
+        >
+          <img src="./img/telegram.svg" alt="telegram" />
+        </a>
+        <a
+          rel="nofollow"
+          href="whatsapp://send?phone=79532955525&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21"
+          class="nav__img"
+          target="_blank"
+        >
+          <img src="./img/viber.svg" alt="whatsapp" />
+        </a>
+      </div>
       <div class="nav__list">
         <a
           rel="nofollow"
@@ -68,16 +97,22 @@
           >Запись</a
         >
 
-        <a class="nav__link" href="#!">О нас</a>
+        <a class="nav__link" href="#about">О нас</a>
 
-        <a class="nav__link" href="#!">Услуги</a>
+        <a class="nav__link" href="#services">Услуги</a>
 
-        <a class="nav__link" href="#!">Мастера</a>
+        <a class="nav__link" href="#masters">Мастера</a>
 
-        <a class="nav__link" href="#!">Акции</a>
+        <a class="nav__link" href="#sales">Акции</a>
 
-        <a class="nav__link" href="#!">Работы</a>
-      </ul>
+        <a class="nav__link" href="#gallery">Работы</a>
+      </div>
+      <div class="nav__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   </div>
 </nav>
@@ -214,7 +249,7 @@
       </h2>
       <button class="appreciate__button">
         <img src="./img/logo_light.svg" alt="Logo" />
-        <a href="#">Записаться</a>
+        <a href="https://n799989.yclients.com/" target="_blank">Записаться</a>
       </button>
       <video
         class="appreciate__video"
@@ -226,17 +261,21 @@
         loop
       ></video>
       <div class="appreciate__play">
-        <img src="./img/triangle.svg" alt="Play button" />
+        <img
+          class="appreciate__play-btn"
+          src="./img/triangle.svg"
+          alt="Play button"
+        />
         <div class="appreciate__text">
           <p>создан для того, чтобы вы могли отдохнуть</p>
-          <a href="#">Смотреть видео</a>
+          <span>Смотреть видео</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-    <section class="services">
+    <section class="services" id="services">
   <div class="container">
     <div class="services__wrapper">
       <div class="services__info">
@@ -301,41 +340,38 @@
           <h4>Комплексные услуги</h4>
           <div class="service__item">
             <p>
-              <span>Услуга "Стрижка Мужская"</span>
-              <span>(подбор стиля, мытьё головы, укладка)</span>
+              <span>Услуга "Стрижка + <br />Моделирование Бороды"</span>
+              <span></span>
             </p>
-            <span>от 1200 руб.</span>
+            <span>от 1800 руб.</span>
           </div>
           <div class="service__item">
             <p>
-              <span>Стрижка машинкой</span>
-              <span>(Одна длина)</span>
+              <span>Услуга "Отец + Сын"</span>
+              <span></span>
             </p>
-            <span>от 600 руб.</span>
+            <span>от 1900 руб.</span>
           </div>
           <div class="service__item">
             <p>
-              <span>Моделирование бороды</span>
-              <span>(Одна длина)</span>
+              <span>Королевское бритье головы</span>
+              <span></span>
             </p>
-            <span>от 800 руб.</span>
+            <span>от 1500 руб.</span>
           </div>
           <div class="service__item">
             <p>
-              <span
-                >Бритье головы опасным <br />
-                лезвием</span
-              >
+              <span>Королевское бритье лица</span>
               <span></span>
             </p>
             <span>от 1200 руб.</span>
           </div>
           <div class="service__item">
             <p>
-              <span>Окрашивание волос</span>
-              <span></span>
+              <span>Услуга Стрижка Машинкой</span>
+              <span>(несколько насадок)</span>
             </p>
-            <span>от 3000 руб.</span>
+            <span>от 900 руб.</span>
           </div>
           <a href="#">Смотреть все услуги</a>
         </li>
@@ -343,41 +379,35 @@
           <h4>Дополнительные услуги</h4>
           <div class="service__item">
             <p>
-              <span>Услуга "Стрижка Мужская"</span>
-              <span>(подбор стиля, мытьё головы, укладка)</span>
+              <span>Услуга "Тонирование Бороды"</span>
             </p>
-            <span>от 1200 руб.</span>
+            <span>от 1000 руб.</span>
           </div>
           <div class="service__item">
             <p>
-              <span>Стрижка машинкой</span>
-              <span>(Одна длина)</span>
+              <span>Услуга "Тонирование Головы"</span>
             </p>
-            <span>от 600 руб.</span>
+            <span>от 700 руб.</span>
           </div>
           <div class="service__item">
             <p>
-              <span>Моделирование бороды</span>
-              <span>(Одна длина)</span>
+              <span>Услуга "Груминг"</span>
             </p>
-            <span>от 800 руб.</span>
+            <span>от 400 руб.</span>
           </div>
           <div class="service__item">
             <p>
-              <span
-                >Бритье головы опасным <br />
-                лезвием</span
-              >
+              <span>Услуга "Окантовка"</span>
               <span></span>
             </p>
-            <span>от 1200 руб.</span>
+            <span>от 300 руб.</span>
           </div>
           <div class="service__item">
             <p>
-              <span>Окрашивание волос</span>
-              <span></span>
+              <span>Услуга "Очистка Лица"</span>
+              <span>черная маска и скрабинг</span>
             </p>
-            <span>от 3000 руб.</span>
+            <span>от 500 руб.</span>
           </div>
           <a href="#">Смотреть все услуги</a>
         </li>
@@ -385,7 +415,7 @@
     </div>
   </div>
 </section>
- <section class="masters">
+ <section class="masters" id="masters">
   <div class="container">
     <div class="masters__wrapper">
       <img class="masters__logo" src="./img/logo.svg" alt="Logo" />
@@ -419,11 +449,13 @@
           </div>
         </div>
       </div>
+      <button class="slider__btn slider__btn--prev">Prev</button>
+      <button class="slider__btn slider__btn--next">Next</button>
     </div>
   </div>
 </section>
 
-    <section class="sales">
+    <section class="sales" id="sales">
   <div class="container">
     <div class="sales__wrapper">
       <h2 class="sales__title">
@@ -443,7 +475,7 @@
     </div>
   </div>
 </section>
- <section class="gallery">
+ <section class="gallery" id="gallery">
   <div class="container">
     <div class="gallery__wrapper">
       <h2 class="gallery__title">
@@ -521,7 +553,11 @@
           барберов, с возможностью роста до ведущих Барберов.
         </p>
         <button class="looking__button">
-          <a href="#">Подробнее</a>
+          <a
+            target="_blank"
+            href="https://xn--32-6kctp4a7a6c.xn--p1ai/searchemployees.html"
+            >Подробнее</a
+          >
         </button>
       </div>
       <img
@@ -548,58 +584,77 @@
       </p>
       <img src="./img/yandex_logo.svg" alt="Yandex logo" />
       <div class="reviews__stars">
-        <img src="./img/star.svg" alt="Start" />
-        <img src="./img/star.svg" alt="Start" />
-        <img src="./img/star.svg" alt="Start" />
-        <img src="./img/star.svg" alt="Start" />
-        <img src="./img/star.svg" alt="Start" />
+        <div
+          style="
+            width: 200px;
+            height: 152px;
+            overflow: hidden;
+            position: relative;
+          "
+        >
+          <iframe
+            class="reviews__widget"
+            src="https://yandex.ru/maps-reviews-widget/195454503442?size=m"
+          ></iframe>
+        </div>
       </div>
-      <a class="reviews__link" href="#">Смотреть отзывы</a>
+      <a
+        class="reviews__link"
+        href="https://yandex.by/maps/org/barbershop_shchetina/195454503442/reviews/?ll=34.350741%2C53.269995&utm_content=rating&utm_medium=reviews&utm_source=maps-reviews-widget&z=15"
+        target="_blank"
+        >Смотреть отзывы</a
+      >
     </div>
   </div>
   <ul class="reviews__cards">
     <li class="reviews__card review">
       <img src="./img/reviewlogo1.png" alt="Отзыв 1" />
       <div class="review__block">
-        <p class="review__title">иванов иВАН</p>
+        <p class="review__title">S V</p>
         <p>
           <img src="./img/star.svg" alt="Star" />
           <span>5.0</span>
         </p>
         <p class="review__text">
-          Первое, что меня поразило, это атмосфера. Здесь все было продумано до
-          мелочей. Приятная музыка, удобные кресла, а самое главное - мастера,
-          которые действительно знают свое дело.
+          Впервые в барбершоп Щетина, впечатление просто отличное, очень уютно и
+          комфортно. Барберу Артёму отдельное огромное спасибо, сыну очень
+          понравилось. Качественная стрижка!!! Атмосфера уюта и
+          профессионализма!
         </p>
       </div>
     </li>
     <li class="reviews__card review">
       <img src="./img/reviewlogo2.png" alt="Отзыв 2" />
       <div class="review__block">
-        <p class="review__title">Сидоров иВАН</p>
+        <p class="review__title">Андрей Ульянов</p>
         <p>
           <img src="./img/star.svg" alt="Star" />
-          <span>4.9</span>
+          <span>5.0</span>
         </p>
         <p class="review__text">
-          В общем, я остался очень доволен своим посещением этого барбершопа.
-          Теперь я знаю, куда идти, когда мне нужно привести себя в порядок.
-          Рекомендую всем, кто хочет получить качественные услуги.
+          Хорошее заведение с приятной атмосферой и в шаговой доступности от
+          ближайших домов. Персонал общительный и отзывчивый, могут учесть
+          пожелания клиента по причёске или же предложить подходящие под стиль
+          варианты.
         </p>
       </div>
     </li>
     <li class="reviews__card review">
       <img src="./img/reviewlogo3.png" alt="Отзыв 3" />
       <div class="review__block">
-        <p class="review__title">Сидоров иВАН</p>
+        <p class="review__title">Александр Т</p>
         <p>
           <img src="./img/star.svg" alt="Star" />
-          <span>4.9</span>
+          <span>5.0</span>
         </p>
         <p class="review__text">
-          Первое, что меня поразило, это атмосфера. Здесь все было продумано до
-          мелочей. Приятная музыка, удобные кресла, а самое главное - мастера,
-          которые действительно знают свое дело.
+          5 дней назад торопился с Москвы забрать в Брянске семью и на море.
+          Заскочил в Барбер Щетина уже перед закрытием, Попал к очень хорошему
+          как Профисионалу и Сотруднику, на фото Барбер он есть. Человек с
+          Большой буквы, профисионал своего дела. А когда узнал что он работает
+          всего несколько месяцев вообще был удивлён его профисиализму. Кто
+          Будет в Брянске заскакивайте в Щетина, Не пожалеете, я 6 лет уже в
+          Барберы хожу, это Оказался самый лучший во всех отношениях.
         </p>
       </div>
     </li>
@@ -676,22 +731,24 @@
             <img src="./img/logo_light.svg" alt="Logo" />
             <ul class="footer__links">
               <li class="footer__link">
-                <a href="#">Запись</a>
+                <a target="_blank" href="https://n799989.yclients.com/"
+                  >Запись</a
+                >
               </li>
               <li class="footer__link">
-                <a href="#">О нас</a>
+                <a href="#about">О нас</a>
               </li>
               <li class="footer__link">
-                <a href="#">Услуги</a>
+                <a href="#services">Услуги</a>
               </li>
               <li class="footer__link">
-                <a href="#">Мастера</a>
+                <a href="#masters">Мастера</a>
               </li>
               <li class="footer__link">
-                <a href="#">Акции</a>
+                <a href="#sales">Акции</a>
               </li>
               <li class="footer__link">
-                <a href="#">Работы</a>
+                <a href="#gallery">Работы</a>
               </li>
             </ul>
           </div>
@@ -730,10 +787,14 @@
         </div>
         <div class="footer__row">
           <p class="footer__contacts">
-            <a class="footer__contacts-link" href="#">+7 (953)-295-55-25</a>
+            <a class="footer__contacts-link" href="tel:+79532955525"
+              >+7 (953)-295-55-25</a
+            >
             <span
               >Email:
-              <a class="footer__contacts-link" href="#">shetina32@mail.ru</a>
+              <a class="footer__contacts-link" href="mailto:shetina32@mail.ru"
+                >shetina32@mail.ru</a
+              >
             </span>
           </p>
           <p class="footer__inn">
