@@ -12,6 +12,12 @@
     <meta name="yandex-verification" content="c788b2872d62df9a" />
     <title>Щетина</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div id="loader" class="loader">
@@ -20,7 +26,9 @@
     <header class="header">
   <div class="container">
     <div class="header__container">
-      <p>Работаем ежедневно: с 10.00 до 21.00г. Брянск,ул. Бежицкая, д. 1/10</p>
+      <p>
+        Работаем ежедневно: с 10.00 до 21.00г. Брянск, ул. Бежицкая, д. 1/10
+      </p>
       <div class="header__links">
         <a href="mailto:shetina32@mail.ru">shetina32@mail.ru</a>
         <a class="header__telephone" href="tel:+79532955525"
@@ -247,10 +255,6 @@
         <span>Мы ценим ваше</span>
         <span>время и комфорт</span>
       </h2>
-      <button class="appreciate__button">
-        <img src="./img/logo_light.svg" alt="Logo" />
-        <a href="https://n799989.yclients.com/" target="_blank">Записаться</a>
-      </button>
       <video
         class="appreciate__video"
         src="./img/video_about.mp4"
@@ -380,18 +384,21 @@
           <div class="service__item">
             <p>
               <span>Услуга "Тонирование Бороды"</span>
+              <span></span>
             </p>
             <span>от 1000 руб.</span>
           </div>
           <div class="service__item">
             <p>
               <span>Услуга "Тонирование Головы"</span>
+              <span></span>
             </p>
             <span>от 700 руб.</span>
           </div>
           <div class="service__item">
             <p>
               <span>Услуга "Груминг"</span>
+              <span></span>
             </p>
             <span>от 400 руб.</span>
           </div>
@@ -427,30 +434,36 @@
         обслуживания для наших клиентов.
       </p>
       <div class="slider">
-        <div class="slider__item">
-          <img src="./img/valeriy.png" alt="Валерий Шумейко" />
-          <div class="slider__barber">
-            <p>Валерий Шумейко</p>
-            <span>топ барбер</span>
+        <div class="slider__wrapper">
+          <div class="slider__item">
+            <img src="./img/valeriy.png" alt="Валерий Шумейко" />
+            <div class="slider__barber">
+              <p>Валерий Шумейко</p>
+              <span>топ барбер</span>
+            </div>
           </div>
-        </div>
-        <div class="slider__item">
-          <img src="./img/artem.png" alt="Артём Артюх" />
-          <div class="slider__barber">
-            <p>Артем Артюх</p>
-            <span>барбер</span>
+          <div class="slider__item">
+            <img src="./img/artem.png" alt="Артём Артюх" />
+            <div class="slider__barber">
+              <p>Артем Артюх</p>
+              <span>барбер</span>
+            </div>
           </div>
-        </div>
-        <div class="slider__item">
-          <img src="./img/pavel.png" alt="Павел Мартушевский" />
-          <div class="slider__barber">
-            <p>Павел Мартушевский</p>
-            <span>барбер</span>
+          <div class="slider__item">
+            <img src="./img/pavel.png" alt="Павел Мартушевский" />
+            <div class="slider__barber">
+              <p>Павел Мартушевский</p>
+              <span>барбер</span>
+            </div>
           </div>
         </div>
       </div>
-      <button class="slider__btn slider__btn--prev">Prev</button>
-      <button class="slider__btn slider__btn--next">Next</button>
+      <button class="slider__btn slider__btn--prev">
+        <img src="./img/left_arrow.svg" alt="Left arrow" />
+      </button>
+      <button class="slider__btn slider__btn--next">
+        <img src="./img/right_arrow.svg" alt="Right arrow" />
+      </button>
     </div>
   </div>
 </section>
@@ -491,48 +504,123 @@
       </p>
       <div>
         <div class="gallery__row">
-          <a href="#">наши работы</a>
-          <a href="#">наш интерьер</a>
+          <button class="gallery__works active">наши работы</button>
+          <button class="gallery__interier">наш интерьер</button>
         </div>
-        <div class="gallery__images">
-          <img
-            src="./img/work1.png"
-            alt="Work1"
-            class="gallery__image1"
-          /><img
-            src="./img/work2.png"
-            alt="Work2"
-            class="gallery__image2"
-          /><img
-            src="./img/work3.png"
-            alt="Work3"
-            class="gallery__image3"
-          /><img
-            src="./img/work5.png"
-            alt="Work4"
-            class="gallery__image4"
-          /><img
-            src="./img/work8.png"
-            alt="Work5"
-            class="gallery__image5"
-          /><img
-            src="./img/work9.png"
-            alt="Work6"
-            class="gallery__image6"
-          /><img
-            src="./img/work6.png"
-            alt="Work7"
-            class="gallery__image7"
-          /><img
-            src="./img/work7.png"
-            alt="Work8"
-            class="gallery__image8"
-          /><img
-            src="./img/work4.png"
-            alt="Work9"
-            class="gallery__image9"
-          />
+        <div class="gallery__slider">
+          <div class="gallery__images">
+            <img
+              src="./img/work1.png"
+              alt="Work1"
+              class="gallery__image1"
+            /><img
+              src="./img/work2.png"
+              alt="Work2"
+              class="gallery__image2"
+            /><img
+              src="./img/work3.png"
+              alt="Work3"
+              class="gallery__image3"
+            /><img
+              src="./img/work5.png"
+              alt="Work4"
+              class="gallery__image4"
+            /><img
+              src="./img/work8.png"
+              alt="Work5"
+              class="gallery__image5"
+            /><img
+              src="./img/work9.png"
+              alt="Work6"
+              class="gallery__image6"
+            /><img
+              src="./img/work6.png"
+              alt="Work7"
+              class="gallery__image7"
+            /><img
+              src="./img/work7.png"
+              alt="Work8"
+              class="gallery__image8"
+            /><img
+              src="./img/work4.png"
+              alt="Work9"
+              class="gallery__image9"
+            />
+          </div>
+          <div class="gallery__interiers">
+            <img
+              src="./img/interier1.jpeg"
+              alt="interier1"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier2.jpeg"
+              alt="interier2"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier3.jpeg"
+              alt="interier3"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier4.jpeg"
+              alt="interier4"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier5.jpeg"
+              alt="interier5"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier6.jpeg"
+              alt="interier6"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier7.jpeg"
+              alt="interier7"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier8.jpeg"
+              alt="interier8"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier9.jpeg"
+              alt="interier9"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier10.jpeg"
+              alt="interier10"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier11.jpeg"
+              alt="interier11"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier12.jpeg"
+              alt="interier12"
+              class="gallery__interiers-image"
+            />
+            <img
+              src="./img/interier13.jpeg"
+              alt="interier13"
+              class="gallery__interiers-image"
+            />
+          </div>
         </div>
+        <button class="gallery__btn gallery__btn--prev">
+          <img src="./img/left_arrow.svg" alt="Left arrow" />
+        </button>
+        <button class="gallery__btn gallery__btn--next">
+          <img src="./img/right_arrow.svg" alt="Right arrow" />
+        </button>
       </div>
     </div>
   </div>
@@ -582,6 +670,15 @@
         разговор, администратор предложит напитки, а вы обязательно захотите
         вернуться!
       </p>
+      <div>
+        <p class="reviews__reward-title">Награды</p>
+        <div class="reviews__rewards">
+          <div class="reviews__reward">
+            <img src="./img/reward.png" alt="Reward" />
+            <span>Хорошее место 2022</span>
+          </div>
+        </div>
+      </div>
       <img src="./img/yandex_logo.svg" alt="Yandex logo" />
       <div class="reviews__stars">
         <div
@@ -598,6 +695,7 @@
           ></iframe>
         </div>
       </div>
+
       <a
         class="reviews__link"
         href="https://yandex.by/maps/org/barbershop_shchetina/195454503442/reviews/?ll=34.350741%2C53.269995&utm_content=rating&utm_medium=reviews&utm_source=maps-reviews-widget&z=15"
@@ -606,59 +704,68 @@
       >
     </div>
   </div>
-  <ul class="reviews__cards">
-    <li class="reviews__card review">
-      <img src="./img/reviewlogo1.png" alt="Отзыв 1" />
-      <div class="review__block">
-        <p class="review__title">S V</p>
-        <p>
-          <img src="./img/star.svg" alt="Star" />
-          <span>5.0</span>
-        </p>
-        <p class="review__text">
-          Впервые в барбершоп Щетина, впечатление просто отличное, очень уютно и
-          комфортно. Барберу Артёму отдельное огромное спасибо, сыну очень
-          понравилось. Качественная стрижка!!! Атмосфера уюта и
-          профессионализма!
-        </p>
-      </div>
-    </li>
-    <li class="reviews__card review">
-      <img src="./img/reviewlogo2.png" alt="Отзыв 2" />
-      <div class="review__block">
-        <p class="review__title">Андрей Ульянов</p>
-        <p>
-          <img src="./img/star.svg" alt="Star" />
-          <span>5.0</span>
-        </p>
-        <p class="review__text">
-          Хорошее заведение с приятной атмосферой и в шаговой доступности от
-          ближайших домов. Персонал общительный и отзывчивый, могут учесть
-          пожелания клиента по причёске или же предложить подходящие под стиль
-          варианты.
-        </p>
-      </div>
-    </li>
-    <li class="reviews__card review">
-      <img src="./img/reviewlogo3.png" alt="Отзыв 3" />
-      <div class="review__block">
-        <p class="review__title">Александр Т</p>
-        <p>
-          <img src="./img/star.svg" alt="Star" />
-          <span>5.0</span>
-        </p>
-        <p class="review__text">
-          5 дней назад торопился с Москвы забрать в Брянске семью и на море.
-          Заскочил в Барбер Щетина уже перед закрытием, Попал к очень хорошему
-          как Профисионалу и Сотруднику, на фото Барбер он есть. Человек с
-          Большой буквы, профисионал своего дела. А когда узнал что он работает
-          всего несколько месяцев вообще был удивлён его профисиализму. Кто
-          Будет в Брянске заскакивайте в Щетина, Не пожалеете, я 6 лет уже в
-          Барберы хожу, это Оказался самый лучший во всех отношениях.
-        </p>
-      </div>
-    </li>
-  </ul>
+  <div class="reviews__slider">
+    <ul class="reviews__cards">
+      <li class="reviews__card review">
+        <img src="./img/reviewlogo1.png" alt="Отзыв 1" />
+        <div class="review__block">
+          <p class="review__title">S V</p>
+          <p>
+            <img src="./img/star.svg" alt="Star" />
+            <span>5.0</span>
+          </p>
+          <p class="review__text">
+            Впервые в барбершоп Щетина, впечатление просто отличное, очень уютно
+            и комфортно. Барберу Артёму отдельное огромное спасибо, сыну очень
+            понравилось. Качественная стрижка!!! Атмосфера уюта и
+            профессионализма!
+          </p>
+        </div>
+      </li>
+      <li class="reviews__card review">
+        <img src="./img/reviewlogo2.png" alt="Отзыв 2" />
+        <div class="review__block">
+          <p class="review__title">Андрей Ульянов</p>
+          <p>
+            <img src="./img/star.svg" alt="Star" />
+            <span>5.0</span>
+          </p>
+          <p class="review__text">
+            Хорошее заведение с приятной атмосферой и в шаговой доступности от
+            ближайших домов. Персонал общительный и отзывчивый, могут учесть
+            пожелания клиента по причёске или же предложить подходящие под стиль
+            варианты.
+          </p>
+        </div>
+      </li>
+      <li class="reviews__card review">
+        <img src="./img/reviewlogo3.png" alt="Отзыв 3" />
+        <div class="review__block">
+          <p class="review__title">Александр Т</p>
+          <p>
+            <img src="./img/star.svg" alt="Star" />
+            <span>5.0</span>
+          </p>
+          <p class="review__text">
+            5 дней назад торопился с Москвы забрать в Брянске семью и на море.
+            Заскочил в Барбер Щетина уже перед закрытием, Попал к очень хорошему
+            как Профисионалу и Сотруднику, на фото Барбер он есть. Человек с
+            Большой буквы, профисионал своего дела. А когда узнал что он
+            работает всего несколько месяцев вообще был удивлён его
+            профисиализму. Кто Будет в Брянске заскакивайте в Щетина, Не
+            пожалеете, я 6 лет уже в Барберы хожу, это Оказался самый лучший во
+            всех отношениях.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <button class="reviews__btn reviews__btn--prev">
+    <img src="./img/left_arrow.svg" alt="Left arrow" />
+  </button>
+  <button class="reviews__btn reviews__btn--next">
+    <img src="./img/right_arrow.svg" alt="Right arrow" />
+  </button>
 </section>
 
     <section class="location">
@@ -824,6 +931,10 @@
   </div>
 </div>
 
+    <button class="fixed__button">
+      <img src="./img/logo_light.svg" alt="Logo" />
+      <a href="https://n799989.yclients.com/" target="_blank">Записаться</a>
+    </button>
     <script src="./js/index.bundle.js"></script>
   </body>
 </html>
